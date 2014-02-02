@@ -105,7 +105,7 @@
         if ([results isKindOfClass:[NSArray class]]) {
             [self.imageResults removeAllObjects];
             [self.imageResults addObjectsFromArray:results];
-            [self.searchDisplayController.searchResultsTableView reloadData];
+            //[self.searchDisplayController.searchResultsTableView reloadData];
         }
     } failure:nil];
     

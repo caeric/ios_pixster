@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SearchViewController.h"
+#import "ImageSearchCollectionViewController.h"
 
 @implementation AppDelegate
 
@@ -15,8 +16,15 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[SearchViewController alloc] init]];
+
     
+    UICollectionViewFlowLayout *aFlowLayout = [[UICollectionViewFlowLayout alloc] init];
+//    [aFlowLayout setItemSize:CGSizeMake(100, 100)];
+    [aFlowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    
+//    aFlowLayout.minimumInteritemSpacing = 5;
+
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ImageSearchCollectionViewController alloc] initWithCollectionViewLayout:aFlowLayout]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageCollectionCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="T21-2p-vMI" customClass="ImageCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eb8-oj-DQN">
+                        <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="tBX-Oz-GHc"/>
+                            <constraint firstAttribute="height" constant="94" id="xGJ-tA-aJi"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="eb8-oj-DQN" firstAttribute="leading" secondItem="T21-2p-vMI" secondAttribute="leading" id="Xtz-6d-W45"/>
+                <constraint firstItem="eb8-oj-DQN" firstAttribute="top" secondItem="T21-2p-vMI" secondAttribute="top" id="be8-Fh-YYl"/>
+            </constraints>
+            <size key="customSize" width="74" height="74"/>
+            <connections>
+                <outlet property="imageView21" destination="eb8-oj-DQN" id="DQg-2t-AzR"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
